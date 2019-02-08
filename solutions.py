@@ -267,26 +267,3 @@ def solve_2_8():
                 print('Admin granted.')
                 return
     raise Exception('Admin not granted')    # If no output has decrypted into a form that grants admin we raise an exception as the encryption/decryption scheme has not been broken
-"""def solve_3_1():
-    aes_key = b''
-    def func_1():
-        global aes_key
-        strings = open('3-1.txt', 'r').readlines()
-        string = strings[randint(0, len(strings) - 1)].replace('\n', '')
-        print('Using ' + string)
-        aes_key = os.urandom(16)
-        iv = os.urandom(16)
-        cipher = encrypt_cbc(string, aes_key, iv)
-        return cipher, iv
-
-    def func_2(cipher, iv):
-        decrypted = decrypt_cbc(cipher, aes_key, iv)
-        try:
-            pkcs7_check(decrypted)  # We are counting on this function raising an exception if the padding is not valid
-            return true
-        except:
-            return false
-    cipher, iv = func_1()
-
-    for block in range(0, len(cipher), AES.block_size):
-        for byte in range"""

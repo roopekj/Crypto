@@ -137,7 +137,7 @@ def solve_1_7():
     AES128encrypted = bytes(open('1-7.txt', 'r').read().encode())
     cipher = b64decode(AES128encrypted)
     key = b'YELLOW SUBMARINE'
-    print('AES-128 decrypted: ' + decrypt_ecb(cipher, key).decode().replace('\n', r'\n'))
+    print('(AES-128) Decrypted: ' + decrypt_ecb(cipher, key).decode().replace('\n', r'\n'))
 def solve_1_8():
     file = open('1-8.txt', 'r')
     lines = file.readlines()

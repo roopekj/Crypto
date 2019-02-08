@@ -224,7 +224,7 @@ def solve_2_4():
 
     print('Decryption took: ' + str(datetime.datetime.now() - time_1) + ' hours. The oracle\'s secret string is:\n' + decrypted.decode().replace('\n', r'\n'))
 
-    # NOTE: We could also use the general break_oracle-function from functions.py, but that would be a bit slower
+    # NOTE: We could also use the general break_oracle-function from tools.py, but that would be a bit slower
 def solve_2_5():
     print(create_kv('foo=bar&baz=qux&zap=zazzle'))
     print(profile_for('my_email@email.com&role=admin'))
